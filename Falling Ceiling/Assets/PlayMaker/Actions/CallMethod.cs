@@ -21,7 +21,7 @@ namespace HutongGames.PlayMaker.Actions
         [Tooltip("Name of the method to call on the component")]
         public FsmString methodName;
 
-        [Tooltip("Method paramters. NOTE: these must match the method's signature!")]
+        [Tooltip("Method parameters. NOTE: these must match the method's signature!")]
         public FsmVar[] parameters;
 
         [ActionSection("Store Result")]
@@ -219,9 +219,9 @@ namespace HutongGames.PlayMaker.Actions
 
         public override string ErrorCheck()
         {
-            /* We could only error check if when we recache,
+            /* We could only error check if when we re-cache,
              * however NeedToUpdateCache() is not super robust
-             * So for now we just recache every frame in editor
+             * So for now we just re cache every frame in editor
              * Need to test editor perf...
             if (!NeedToUpdateCache())
             {
